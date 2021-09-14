@@ -1,77 +1,151 @@
 <template>
-  <v-row justify="center" align="center">
-    <v-col cols="12" sm="8" md="6">
-      <v-card class="logo py-4 d-flex justify-center">
-        <NuxtLogo />
-        <VuetifyLogo />
-      </v-card>
-      <v-card>
-        <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template
-        </v-card-title>
-        <v-card-text>
-          <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
-          <p>
-            For more information on Vuetify, check out the <a
-              href="https://vuetifyjs.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              documentation
-            </a>.
+  <div class="index">
+
+    <!-- Header -->
+    <div id="header">
+      <Header/>
+    </div>
+
+    <v-container>
+
+      <!-- About -->
+      <v-row id="about" class="my-8" align="center">
+        <v-col cols=12 class="col-md-4 text-center">
+          <v-avatar size="200">
+            <img src="~static/images/ljubljana.jpg"/>
+          </v-avatar>
+          <h5 class="text-h5 mt-2">Lan Sovinc</h5>
+          <p class="text-subtitle-1">dip. inž. rač. in inf. (UN)</p>
+        </v-col>
+        <v-col cols=12 class="col-md-8 text-center">
+          <p class="text-body-1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper porttitor ante. Duis fermentum
+            libero libero, sit amet tristique neque blandit non. Nam sit amet suscipit orci, a porta tellus. Class
+            aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras ac risus id
+            sapien rhoncus mollis a nec arcu. Sed dui lorem, egestas vitae leo eget, mattis imperdiet augue. Curabitur
+            dictum, ante et placerat accumsan, velit neque maximus orci, tristique imperdiet quam ex vitae ipsum.
+            Vivamus gravida odio dui, et convallis mauris rhoncus vitae.
           </p>
-          <p>
-            If you have questions, please join the official <a
-              href="https://chat.vuetifyjs.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="chat"
-            >
-              discord
-            </a>.
+        </v-col>
+      </v-row>
+
+      <!-- Competences -->
+      <v-row id="competences" class="my-8" align="center">
+        <v-col cols="12" class="mb-4">
+          <h3 class="text-h3 text-center">Kaj počnem?</h3>
+        </v-col>
+        <v-col cols=12 class="col-md-4 text-center">
+          <v-avatar color="primary" size="150">
+            <v-icon dark size="80">
+              mdi-xml
+            </v-icon>
+          </v-avatar>
+          <h5 class="text-h5 my-3">Full Stack</h5>
+          <p class="text-subtitle-1">
+            A Full Stack Developer is someone who works with the Back End — or server side — of the application as well
+            as the Front End, or client side.
           </p>
-          <p>
-            Find a bug? Report it on the github <a
-              href="https://github.com/vuetifyjs/vuetify/issues"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="contribute"
-            >
-              issue board
-            </a>.
+        </v-col>
+        <v-col cols=12 class="col-md-4 text-center">
+          <v-avatar color="primary" size="150">
+            <v-icon dark size="80">
+              mdi-xml
+            </v-icon>
+          </v-avatar>
+          <h5 class="text-h5 my-3">Full Stack</h5>
+          <p class="text-subtitle-1">
+            A Full Stack Developer is someone who works with the Back End — or server side — of the application as well
+            as the Front End, or client side.
           </p>
-          <p>Thank you for developing with Vuetify and I look forward to bringing more exciting features in the future.</p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
-          </div>
-          <hr class="my-3">
-          <a
-            href="https://nuxtjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt Documentation
-          </a>
-          <br>
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt GitHub
-          </a>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn
-            color="primary"
-            nuxt
-            to="/inspire"
-          >
-            Continue
-          </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-col>
-  </v-row>
+        </v-col>
+        <v-col cols=12 class="col-md-4 text-center">
+          <v-avatar color="primary" size="150">
+            <v-icon dark size="80">
+              mdi-xml
+            </v-icon>
+          </v-avatar>
+          <h5 class="text-h5 my-3">Full Stack</h5>
+          <p class="text-subtitle-1">
+            A Full Stack Developer is someone who works with the Back End — or server side — of the application as well
+            as the Front End, or client side.
+          </p>
+        </v-col>
+      </v-row>
+
+      <!-- Projects
+      <v-row>
+        <v-col cols="12" class="mb-4">
+          <h3 class="text-h3 text-center">Delo in projekti</h3>
+        </v-col>
+        <v-col v-for="project in projects" :key="project.title" cols="12" md="6" lg="4" xl="3">
+          <ProjectCard :projectData="project"/>
+        </v-col>
+      </v-row> -->
+
+
+      <!-- Projects -->
+      <v-row id="projects">
+        <v-col cols="12" class="mb-4">
+          <h3 class="text-h3 text-center">Delo in projekti</h3>
+        </v-col>
+        <v-col cols="12" class="mb-4">
+          <v-slide-group active-class="success" show-arrows center-active>
+            <v-slide-item v-for="project in projects" :key="project.title">
+              <ProjectCard class="ma-4" :projectData="project"/>
+            </v-slide-item>
+          </v-slide-group>
+        </v-col>
+      </v-row>
+    </v-container>
+
+    <!-- Contact -->
+    <div id="contact">
+      <ContactBlock/>
+    </div>
+
+  </div>
+
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      projects: [
+        {
+          title: "Test 1",
+          subtitle: "Izdelava spletne strani in celostna podoba.",
+          image:
+            {
+              src: require('~/static/images/ljubljana.jpg')
+            }
+        },
+        {
+          title: "Test 2",
+          subtitle: "Izdelava spletne strani in celostna podoba.",
+          image:
+            {
+              src: require('~/static/images/ljubljana.jpg')
+            }
+        },
+        {
+          title: "Test 3",
+          subtitle: "Izdelava spletne strani in celostna podoba.",
+          image:
+            {
+              src: require('~/static/images/ljubljana.jpg')
+            }
+        },
+        {
+          title: "Test 4",
+          subtitle: "Izdelava spletne strani in celostna podoba.",
+          image:
+            {
+              src: require('~/static/images/ljubljana.jpg')
+            }
+        }
+      ]
+    }
+  }
+}
+</script>

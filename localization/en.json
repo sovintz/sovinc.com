@@ -1,0 +1,48 @@
+{
+  "message": "Hello",
+  "homePage": {
+    "pageTitle": "Pikado d.o.o. EN",
+    "tabTitle": "Pikado d.o.o. EN",
+    "navTitle": "Home",
+    "metaData": "This is the home page description."
+  },
+  "projectsPage": {
+    "pageTitle": "Projects",
+    "tabTitle": "Projects",
+    "navTitle": "Projects",
+    "metaData": "This is the projects page description."
+  },
+  "teamPage": {
+    "pageTitle": "Team",
+    "tabTitle": "Team",
+    "navTitle": "Team",
+    "metaData": "This is the team page description."
+  },
+  "contactPage": {
+    "pageTitle": "Contact",
+    "tabTitle": "Contact",
+    "navTitle": "Contact",
+    "metaData": "This is the contact page description."
+  },
+  "contactComponent": {
+    "formTitle": "Send Us a Message",
+    "formNameLabel": "Name*",
+    "formEmailLabel": "E-mail*",
+    "formMessageLabel": "Message*",
+    "buttonLabel": "Submit",
+    "snackbarText": "Message sent",
+    "snackbarTextErr": "Error while sending message",
+    "snackbarClose": "Close"
+  },
+  "errorMessages": {
+    "required": "Required field",
+    "email": "E-mail address must be valid",
+    "length32": "Field must be at most 32 characters long",
+    "length64": "Field must be at most 64 characters long",
+    "length1024": "Field must be at most 1024 characters long"
+  },
+  "realEstateButton": "Real Estate",
+  "footer": {
+    "copyright": "© Pikado d.o.o. | All Rights Reserved"
+  }
+}

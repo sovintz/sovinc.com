@@ -1,0 +1,48 @@
+{
+  "message": "Živijo",
+  "homePage": {
+    "pageTitle": "Pikado d.o.o.",
+    "tabTitle": "Pikado d.o.o.",
+    "navTitle": "Domov",
+    "metaData": "To je opis domače strani."
+  },
+  "projectsPage": {
+    "pageTitle": "Projekti",
+    "tabTitle": "Projekti",
+    "navTitle": "Projekti",
+    "metaData": "To je opis projektne strani."
+  },
+  "teamPage": {
+    "pageTitle": "Ekipa",
+    "tabTitle": "Ekipa",
+    "navTitle": "Ekipa",
+    "metaData": "To je opis ekipne strani."
+  },
+  "contactPage": {
+    "pageTitle": "Kontakt",
+    "tabTitle": "Kontakt",
+    "navTitle": "Kontakt",
+    "metaData": "To je opis kontaktne strani."
+  },
+  "contactComponent": {
+    "formTitle": "Pošljite nam sporočilo",
+    "formNameLabel": "Ime*",
+    "formEmailLabel": "E-mail*",
+    "formMessageLabel": "Sporočilo*",
+    "buttonLabel": "Oddaj",
+    "snackbarText": "Sporočilo poslano",
+    "snackbarTextErr": "Napaka pri pošiljanju sporočila",
+    "snackbarClose": "Zapri"
+  },
+  "errorMessages": {
+    "required": "Obvezno polje",
+    "email": "E-mail naslov mora bit veljaven",
+    "length32": "Dolžina polja ne sme presegati 32 znakov",
+    "length64": "Dolžina polja ne sme presegati 64 znakov",
+    "length1024": "Dolžina polja ne sme presegati 1024 znakov"
+  },
+  "realEstateButton": "Nepremičnine",
+  "footer": {
+    "copyright": "© Pikado d.o.o. | Vse pravice pridržane"
+  }
+}
