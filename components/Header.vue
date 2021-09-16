@@ -19,14 +19,14 @@
           <!-- Header Text -->
           <v-col cols="12" class="white--text">
             <transition enter-active-class="animate__animated animate__fadeInDown">
-              <h4 v-if="start" class="text-h5 text-md-h4">Dobrodošli v moj svet!</h4>
+              <h4 v-if="start" class="text-h5 text-md-h4">{{ $t('homePage.header.title') }}</h4>
             </transition>
             <h4 v-if="!start" class="text-h5 text-md-h4">&zwnj;</h4>
           </v-col>
           <!-- Header Button -->
           <v-col>
             <v-btn color="accent" :x-large="$vuetify.breakpoint.mdAndUp" :loading="loader" @click="loader=true; startTour()">
-              Predstavitev
+              {{ $t('homePage.header.button') }}
             </v-btn>
           </v-col>
         </v-row>

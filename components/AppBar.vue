@@ -10,13 +10,9 @@
 
       <v-spacer/>
 
-      <!-- Desktop Navigation Buttons
-      <v-btn v-for="(item, index) in navItems" :key="index" plain class="ma-2 hidden-sm-and-down" nuxt exact :to="localePath(item.to)">
-        {{ $t(item.title) }}
-      </v-btn>-->
-      <v-btn v-for="(item, index) in navItems" :key="index" plain class="ma-2 hidden-sm-and-down"
+      <v-btn v-for="(item, index) in $i18n.t('navMenu')" :key="index" plain class="ma-2 hidden-sm-and-down"
              @click="$vuetify.goTo('#' + item.to)">
-        {{ item.title }}
+        {{ $t(item.title) }}
       </v-btn>
 
       <v-spacer/>
@@ -67,7 +63,7 @@
     <v-navigation-drawer v-model="drawer" fixed temporary right>
       <v-list nav>
         <v-list-item-group v-model="group" active-class="primary--text text--accent-4">
-          <v-list-item v-for="(item, index) in navItems" :key="index"
+          <v-list-item v-for="(item, index) in $i18n.t('navMenu')" :key="index"
                        @click="$vuetify.goTo('#' + item.to); drawer=false">
             {{ (item.title) }}
           </v-list-item>
@@ -125,12 +121,6 @@ export default {
     drawer: false,
     group: null,
     scrolled: false,
-    navItems: [
-      {title: 'O meni', to: 'about'},
-      {title: 'Kompetence', to: 'competences'},
-      {title: 'Izkušnje', to: 'projects'},
-      {title: 'Kontakt', to: 'contact'},
-    ],
     icons: [
       'mdi-email',
       'mdi-linkedin',

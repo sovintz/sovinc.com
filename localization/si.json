@@ -1,48 +1,93 @@
 {
-  "message": "Živijo",
+  "navMenu": [
+    "1",
+    "2",
+    "3"
+  ],
   "homePage": {
-    "pageTitle": "Pikado d.o.o.",
-    "tabTitle": "Pikado d.o.o.",
-    "navTitle": "Domov",
-    "metaData": "To je opis domače strani."
-  },
-  "projectsPage": {
-    "pageTitle": "Projekti",
-    "tabTitle": "Projekti",
-    "navTitle": "Projekti",
-    "metaData": "To je opis projektne strani."
-  },
-  "teamPage": {
-    "pageTitle": "Ekipa",
-    "tabTitle": "Ekipa",
-    "navTitle": "Ekipa",
-    "metaData": "To je opis ekipne strani."
-  },
-  "contactPage": {
-    "pageTitle": "Kontakt",
-    "tabTitle": "Kontakt",
-    "navTitle": "Kontakt",
-    "metaData": "To je opis kontaktne strani."
+    "pageTitle": "Sovinc.com",
+    "tabTitle": "Sovinc.com",
+    "metaData": "To je opis domače strani.",
+    "header": {
+      "title": "Dobrodošli v moj svet!",
+      "button": "Predstavitev"
+    },
+    "aboutSection": {
+      "title": "O meni",
+      "myName": "Lan Sovinc",
+      "obtainedTitle": "dip. inž. rač. in inf. (UN)",
+      "description": "SLO Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper porttitor ante. Duis fermentum libero libero, sit amet tristique neque blandit non. Nam sit amet suscipit orci, a porta tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras ac risus id sapien rhoncus mollis a nec arcu. Sed dui lorem, egestas vitae leo eget, mattis imperdiet augue. Curabitur dictum, ante et placerat accumsan, velit neque maximus orci, tristique imperdiet quam ex vitae ipsum. Vivamus gravida odio dui, et convallis mauris rhoncus vitae."
+    },
+    "competencesSection": {
+      "title": "Kaj počnem?",
+      "competences": [
+        {
+          "title": "Full Stack",
+          "description": "SLO A Full Stack Developer is someone who works with the Back End — or server side — of the application as well as the Front End, or client side.",
+          "icon": "mdi-xml"
+        },
+        {
+          "title": "Full Stack",
+          "description": "SLO A Full Stack Developer is someone who works with the Back End — or server side — of the application as well as the Front End, or client side.",
+          "icon": "mdi-xml"
+        },
+        {
+          "title": "Full Stack",
+          "description": "SLO A Full Stack Developer is someone who works with the Back End — or server side — of the application as well as the Front End, or client side.",
+          "icon": "mdi-xml"
+        }
+      ]
+    },
+    "projectsSection": {
+      "title": "Delo in projekti",
+      "projects": [
+        {
+          "title": "Test 1",
+          "description": "Izdelava spletne strani in celostna podoba.",
+          "image": "ljubljana.jpg"
+        },
+        {
+          "title": "Test 2",
+          "description": "Izdelava spletne strani in celostna podoba.",
+          "image": "ljubljana.jpg"
+        },
+        {
+          "title": "Test 3",
+          "description": "Izdelava spletne strani in celostna podoba.",
+          "image": "ljubljana.jpg"
+        },
+        {
+          "title": "Test 4",
+          "description": "Izdelava spletne strani in celostna podoba.",
+          "image": "ljubljana.jpg"
+        }
+      ]
+    },
+    "contactSection":{
+      "title": "Stopite v stik z mano"
+    }
   },
   "contactComponent": {
-    "formTitle": "Pošljite nam sporočilo",
+    "formTitle": "Pošljite mi sporočilo",
     "formNameLabel": "Ime*",
     "formEmailLabel": "E-mail*",
     "formMessageLabel": "Sporočilo*",
     "buttonLabel": "Oddaj",
-    "snackbarText": "Sporočilo poslano",
-    "snackbarTextErr": "Napaka pri pošiljanju sporočila",
-    "snackbarClose": "Zapri"
+    "snackbar": {
+      "text": "Sporočilo poslano",
+      "textErr": "Napaka pri pošiljanju sporočila",
+      "close": "Zapri"
+    },
+    "errorMessages": {
+      "required": "Obvezno polje",
+      "email": "E-mail naslov mora bit veljaven",
+      "length32": "Dolžina polja ne sme presegati 32 znakov",
+      "length64": "Dolžina polja ne sme presegati 64 znakov",
+      "length1024": "Dolžina polja ne sme presegati 1024 znakov"
+    }
   },
-  "errorMessages": {
-    "required": "Obvezno polje",
-    "email": "E-mail naslov mora bit veljaven",
-    "length32": "Dolžina polja ne sme presegati 32 znakov",
-    "length64": "Dolžina polja ne sme presegati 64 znakov",
-    "length1024": "Dolžina polja ne sme presegati 1024 znakov"
-  },
-  "realEstateButton": "Nepremičnine",
+
   "footer": {
-    "copyright": "© Pikado d.o.o. | Vse pravice pridržane"
+    "copyright": "© Lan Sovinc | Vse pravice pridržane"
   }
 }

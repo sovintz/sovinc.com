@@ -3,19 +3,18 @@
   <!-- Card -->
   <v-card class="ma-4" max-width="320">
 
-    <v-img :src=projectData.image.src height="200px"/>
+    <v-img :src="require(`@/static/images/${projectData.image}`)" height="200px"/>
 
     <v-card-title>
       {{ projectData.title }}
     </v-card-title>
 
     <v-card-subtitle>
-      {{ projectData.subtitle }}
+      {{ projectData.description }}
     </v-card-subtitle>
 
     <!-- Dialog -->
   </v-card>
-
 
 </template>
 

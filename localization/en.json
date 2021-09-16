@@ -1,28 +1,72 @@
 {
-  "message": "Hello",
+  "navMenu": [
+    {"title": "About", "to": "about"},
+    {"title": "Competences", "to": "competences"},
+    {"title": "Experience", "to": "projects"},
+    {"title": "Contact", "to": "contact"}
+  ],
   "homePage": {
-    "pageTitle": "Pikado d.o.o. EN",
-    "tabTitle": "Pikado d.o.o. EN",
-    "navTitle": "Home",
-    "metaData": "This is the home page description."
-  },
-  "projectsPage": {
-    "pageTitle": "Projects",
-    "tabTitle": "Projects",
-    "navTitle": "Projects",
-    "metaData": "This is the projects page description."
-  },
-  "teamPage": {
-    "pageTitle": "Team",
-    "tabTitle": "Team",
-    "navTitle": "Team",
-    "metaData": "This is the team page description."
-  },
-  "contactPage": {
-    "pageTitle": "Contact",
-    "tabTitle": "Contact",
-    "navTitle": "Contact",
-    "metaData": "This is the contact page description."
+    "pageTitle": "Sovinc.com",
+    "tabTitle": "Sovinc.com",
+    "metaData": "This is the home page description.",
+    "header": {
+      "title": "Welcome to my world!",
+      "button": "Introduction"
+    },
+    "aboutSection": {
+      "title": "About",
+      "myName": "Lan Sovinc",
+      "obtainedTitle": "dip. inž. rač. in inf. (UN) ENG",
+      "description": "ENG Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper porttitor ante. Duis fermentum libero libero, sit amet tristique neque blandit non. Nam sit amet suscipit orci, a porta tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras ac risus id sapien rhoncus mollis a nec arcu. Sed dui lorem, egestas vitae leo eget, mattis imperdiet augue. Curabitur dictum, ante et placerat accumsan, velit neque maximus orci, tristique imperdiet quam ex vitae ipsum. Vivamus gravida odio dui, et convallis mauris rhoncus vitae."
+    },
+    "competencesSection": {
+      "title": "What I do?",
+      "competences": [
+        {
+          "title": "Full Stack",
+          "description": "ENG A Full Stack Developer is someone who works with the Back End — or server side — of the application as well as the Front End, or client side.",
+          "icon": "mdi-xml"
+        },
+        {
+          "title": "Full Stack",
+          "description": "ENG A Full Stack Developer is someone who works with the Back End — or server side — of the application as well as the Front End, or client side.",
+          "icon": "mdi-xml"
+        },
+        {
+          "title": "Full Stack",
+          "description": "ENG A Full Stack Developer is someone who works with the Back End — or server side — of the application as well as the Front End, or client side.",
+          "icon": "mdi-xml"
+        }
+      ]
+    },
+    "projectsSection": {
+      "title": "Work and Projects",
+      "projects": [
+        {
+          "title": "Test 1",
+          "description": "ENG Izdelava spletne strani in celostna podoba.",
+          "image": "ljubljana.jpg"
+        },
+        {
+          "title": "Test 2",
+          "description": "ENG Izdelava spletne strani in celostna podoba.",
+          "image": "ljubljana.jpg"
+        },
+        {
+          "title": "Test 3",
+          "description": "ENG Izdelava spletne strani in celostna podoba.",
+          "image": "ljubljana.jpg"
+        },
+        {
+          "title": "Test 4",
+          "description": "ENG Izdelava spletne strani in celostna podoba.",
+          "image": "ljubljana.jpg"
+        }
+      ]
+    },
+    "contactSection":{
+      "title": "Get in touch with me"
+    }
   },
   "contactComponent": {
     "formTitle": "Send Us a Message",
@@ -30,19 +74,21 @@
     "formEmailLabel": "E-mail*",
     "formMessageLabel": "Message*",
     "buttonLabel": "Submit",
-    "snackbarText": "Message sent",
-    "snackbarTextErr": "Error while sending message",
-    "snackbarClose": "Close"
+    "snackbar": {
+      "text": "Message sent",
+      "textErr": "Error while sending message",
+      "close": "Close"
+    },
+    "errorMessages": {
+      "required": "Required field",
+      "email": "E-mail address must be valid",
+      "length32": "Field must be at most 32 characters long",
+      "length64": "Field must be at most 64 characters long",
+      "length1024": "Field must be at most 1024 characters long"
+    }
   },
-  "errorMessages": {
-    "required": "Required field",
-    "email": "E-mail address must be valid",
-    "length32": "Field must be at most 32 characters long",
-    "length64": "Field must be at most 64 characters long",
-    "length1024": "Field must be at most 1024 characters long"
-  },
-  "realEstateButton": "Real Estate",
+
   "footer": {
-    "copyright": "© Pikado d.o.o. | All Rights Reserved"
+    "copyright": "© Lan Sovinc | All Rights Reserved"
   }
 }

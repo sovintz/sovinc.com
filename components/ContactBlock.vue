@@ -3,28 +3,28 @@
     <v-container id="parent">
       <v-row class="py-4">
         <v-col cols="12" class="mb-4">
-          <h3 class="text-h3 text-center">Stopite v stik z mano</h3>
+          <h3 class="text-h3 text-center">{{ $t('homePage.contactSection.title') }}</h3>
         </v-col>
         <v-col>
           <v-form ref="contactForm">
             <v-text-field
                 v-model="ContactFormData.name"
                 :counter="32"
-                :label="'contactComponent.formNameLabel'"
+                :label="$t('contactComponent.formNameLabel')"
                 required
                 :rules="nameRules"
             ></v-text-field>
             <v-text-field
                 v-model="ContactFormData.email"
                 :counter="128"
-                :label="'contactComponent.formEmailLabel'"
+                :label="$t('contactComponent.formEmailLabel')"
                 required
                 :rules="emailRules"
             ></v-text-field>
             <v-textarea
                 v-model="ContactFormData.message"
                 :counter="1024"
-                :label="'contactComponent.formMessageLabel'"
+                :label="$t('contactComponent.formMessageLabel')"
                 required
                 :rules="messageRules"
             ></v-textarea>
@@ -33,7 +33,7 @@
             <!--<vue-recaptcha :sitekey="captchaSiteKey" ref="invisibleRecaptcha" @verify="onVerify" @expired="onExpired" size="invisible"/>-->
 
             <v-btn color="primary" @click="submit" :loading="sendingMail" :disabled="sendingMail">
-              {{ 'contactComponent.buttonLabel' }}
+              {{ $t('contactComponent.buttonLabel') }}
             </v-btn>
 
           </v-form>
@@ -43,10 +43,10 @@
 
     <!-- form submit snackbar -->
     <v-snackbar v-model="snackbar.visible" :timeout="snackbar.timeout" :color="snackbar.color">
-      {{ 'contactComponent.buttonLabel' }}
+      {{ $t('contactComponent.buttonLabel') }}
       <template v-slot:action="{ attrs }">
         <v-btn color="white" text v-bind="attrs" @click="snackbar.visible = false">
-          {{ 'contactComponent.snackbarClose' }}
+          {{ $t('contactComponent.snackbarClose') }}
         </v-btn>
       </template>
     </v-snackbar>
@@ -60,35 +60,36 @@
 // import VueRecaptcha from 'vue-recaptcha';
 
 export default {
-  data: () => ({
-    captchaSiteKey: '6Ld1PC4bAAAAAA6cUFizjmon1nbIf4tV_CGjFNOR',
-    ContactFormData: {
-      name: '',
-      email: '',
-      message: ''
-    },
-    sendingMail: false,
-    snackbar: {
-      visible: false,
-      timeout: 2000,
-      color: null,
-      text: '',
-    },
-    nameRules: [
-      // TODO: kaj naredim
-      v => !!v || "Required Field",
-      v => !!v && v.length <= 32 || "Field must be at most 32 characters long",
-    ],
-    emailRules: [
-      v => !!v || "Required Field",
-      v => !!v && v.length <= 64 || "Field must be at most 64 characters long",
-      v => /^(([^<>()[\]\\.,;:\s@']+(\.[^<>()\\[\]\\.,;:\s@']+)*)|('.+'))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(v) || "E-mail address must be valid"
-    ],
-    messageRules: [
-      v => !!v || "Required Field",
-      v => !!v && v.length <= 1024 || "Field must be at most 1024 characters long",
-    ]
-  }),
+  data() {
+    return {
+      captchaSiteKey: '6Ld1PC4bAAAAAA6cUFizjmon1nbIf4tV_CGjFNOR',
+      ContactFormData: {
+        name: '',
+        email: '',
+        message: ''
+      },
+      sendingMail: false,
+      snackbar: {
+        visible: false,
+        timeout: 2000,
+        color: null,
+        text: '',
+      },
+      nameRules: [
+        v => !!v || this.$i18n.t('contactComponent.errorMessages.required'),
+        v => !!v && v.length <= 32 || this.$i18n.t('contactComponent.errorMessages.length32'),
+      ],
+      emailRules: [
+        v => !!v || this.$i18n.t('contactComponent.errorMessages.required'),
+        v => !!v && v.length <= 64 || this.$i18n.t('contactComponent.errorMessages.length64'),
+        v => /^(([^<>()[\]\\.,;:\s@']+(\.[^<>()\\[\]\\.,;:\s@']+)*)|('.+'))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(v) || "E-mail address must be valid"
+      ],
+      messageRules: [
+        v => !!v || this.$i18n.t('contactComponent.errorMessages.required'),
+        v => !!v && v.length <= 1024 || this.$i18n.t('contactComponent.errorMessages.length1024'),
+      ]
+    }
+  },
   methods: {
     contact(contact) {
       if (contact === "phone") {
