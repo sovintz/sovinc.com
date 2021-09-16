@@ -67,7 +67,7 @@ export default {
 .parallax {
   height: 100vh !important;
 
-  background-image:url("~static/images/test.jpg");
+  background-image:url("~static/images/header.jpg");
 
   background-attachment: fixed;
   background-position: right;

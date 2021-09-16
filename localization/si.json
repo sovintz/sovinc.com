@@ -86,8 +86,12 @@
       "length1024": "Dolžina polja ne sme presegati 1024 znakov"
     }
   },
-
   "footer": {
     "copyright": "© Lan Sovinc | Vse pravice pridržane"
+  },
+  "cookies": {
+    "text": "Ta stran uporablja piškotke za delovanje in analitiko. Z nadajno uporabo strani se strinjate z uporabo piškotkov.",
+    "accept" : "Sprejmi",
+    "decline" : "Zavrni"
   }
 }

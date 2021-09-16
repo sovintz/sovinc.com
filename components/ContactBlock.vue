@@ -62,7 +62,7 @@
 export default {
   data() {
     return {
-      captchaSiteKey: '6Ld1PC4bAAAAAA6cUFizjmon1nbIf4tV_CGjFNOR',
+      captchaSiteKey: '6LckRXAcAAAAAJZBXZHcVVUoGSS7Nnc-KGBJkKt4',
       ContactFormData: {
         name: '',
         email: '',
@@ -105,9 +105,9 @@ export default {
     submit() {
 
       // validate form and start captcha
-      /* if (this.$refs.contactForm.validate()) {
+      if (this.$refs.contactForm.validate()) {
         this.$refs.invisibleRecaptcha.execute()
-      } */
+      }
       console.log("test")
     },
     // TODO: fix captcha
