@@ -8,7 +8,7 @@ export default {
 
   // Router base for GitHub Pages
   router: {
-    base: './sovinc.com/'
+    base: '/'
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
