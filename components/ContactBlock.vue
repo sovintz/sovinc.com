@@ -30,7 +30,7 @@
             ></v-textarea>
 
             <!-- captcha for button -->
-            <!--<vue-recaptcha :sitekey="captchaSiteKey" ref="invisibleRecaptcha" @verify="onVerify" @expired="onExpired" size="invisible"/>-->
+            <vue-recaptcha :sitekey="captchaSiteKey" ref="invisibleRecaptcha" @verify="onVerify" @expired="onExpired" size="invisible"/>
 
             <v-btn color="primary" @click="submit" :loading="sendingMail" :disabled="sendingMail">
               {{ $t('contactComponent.buttonLabel') }}
@@ -90,35 +90,61 @@ export default {
       ]
     }
   },
+  async mounted() {
+    try {
+      await this.$recaptcha.init()
+    } catch (e) {
+      console.error(e);
+    }
+  },
+  beforeDestroy() {
+    this.$recaptcha.destroy()
+  },
   methods: {
-    contact(contact) {
-      if (contact === "phone") {
-        window.location.href = "tel:+38640831418";
-      }
-      else if (contact === "email") {
-        window.open("mailto:info@pikado.si", "_blank");
-      }
-      else if (contact === "map") {
-        window.open("https://goo.gl/maps/j9Ay2VfwQDLbyMmu7", "_blank");
-      }
-    },
-    submit() {
+    async submit() {
+      try {
+        const token = await this.$recaptcha.execute('login')
+        console.log('ReCaptcha token:', token)
+        this.sendMessage()
 
-      // validate form and start captcha
-      if (this.$refs.contactForm.validate()) {
-        this.$refs.invisibleRecaptcha.execute()
+      } catch (error) {
+        console.log('Login error:', error)
+        this.snackbar.text = this.$i18n.t('contactComponent.snackbar.textErr')
+        this.snackbar.color = "error";
+        this.snackbar.visible = true;
       }
-      console.log("test")
+      console.log("submit")
     },
-    // TODO: fix captcha
+    sendMessage() {
+      this.sendingMail = true
+      console.log("send message")
+
+      /* axios.post('/emails/', this.ContactFormData)
+        .then(() => {
+
+          this.snackbar.text = this.$i18n.t('contactComponent.snackbar.text')
+          this.snackbar.color = null;
+          this.snackbar.visible = true;
+
+          // clear fields after creating user
+          this.$refs.contactForm.reset()
+        })
+        .catch(() => {
+
+          this.snackbar.text = this.$i18n.t('contactComponent.snackbar.textErr')
+          this.snackbar.color = "error";
+          this.snackbar.visible = true;
+        })
+        .finally(() => {
+          this.sendingMail = false
+
+          // reset captcha
+          this.$refs.invisibleRecaptcha.reset()
+        }) */
+    }
   }
 }
 </script>
 
 <style scoped>
-/* Has to be duplicated, otherwise does not work*/
-.hov:hover > * {
-  transition: color 0.2s ease-out !important;
-  color: #01b034 !important;
-}
 </style>

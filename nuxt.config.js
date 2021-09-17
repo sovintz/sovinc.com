@@ -14,13 +14,13 @@ export default {
       lang: 'en'
     },
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      {charset: 'utf-8'},
+      {name: 'viewport', content: 'width=device-width, initial-scale=1'},
+      {hid: 'description', name: 'description', content: ''},
+      {name: 'format-detection', content: 'telephone=no'}
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
     ]
   },
 
@@ -64,13 +64,21 @@ export default {
         strategy: 'prefix',
         vueI18n: {
           fallbackLocale: 'si',
+          silentTranslationWarn: process.env.NODE_ENV === 'production',
           messages: {
             si,
             en
           }
         }
       }
-    ]
+    ],
+    [
+      '@nuxtjs/recaptcha',
+      {
+        siteKey: "6LckRXAcAAAAAJZBXZHcVVUoGSS7Nnc-KGBJkKt4",
+        version: 3
+      }
+    ],
   ],
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
@@ -93,6 +101,10 @@ export default {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
+  build: {},
+
+  // Router base for GitHub Pages
+  router: {
+    base: '/sovinc.com/'
   }
 }

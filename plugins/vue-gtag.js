@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueGtag from "vue-gtag";
 
 Vue.use(VueGtag, {
-  config: { id: "UA-174146361-1" },
+  config: { id: "G-XSZWYLGR2P" },
+  enabled: true
 
 })
