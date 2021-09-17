@@ -6,10 +6,10 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
-  // Router base for GitHub Pages
+  /* Router base for GitHub Pages
   router: {
     base: './'
-  },
+  }, */
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
