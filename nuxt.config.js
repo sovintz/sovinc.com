@@ -6,6 +6,11 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
+  // Router base for GitHub Pages
+  router: {
+    base: './sovinc.com/'
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: '%s - sovinc.com',
@@ -103,8 +108,4 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
 
-  // Router base for GitHub Pages
-  router: {
-    base: '/sovinc.com/'
-  }
 }
