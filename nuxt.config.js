@@ -5,9 +5,6 @@ import en from './localization/en.json'
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
-  static: {
-    prefix: false
-  },
 
   // Router base for GitHub Pages
   router: {
