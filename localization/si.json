@@ -1,8 +1,9 @@
 {
   "navMenu": [
-    "1",
-    "2",
-    "3"
+    {"title": "O meni", "to": "about"},
+    {"title": "Znanja", "to": "competences"},
+    {"title": "Izkušnje", "to": "projects"},
+    {"title": "Kontakt", "to": "contact"}
   ],
   "homePage": {
     "pageTitle": "Sovinc.com",

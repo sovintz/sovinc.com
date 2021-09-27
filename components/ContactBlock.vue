@@ -30,9 +30,9 @@
             ></v-textarea>
 
             <!-- captcha for button -->
-            <vue-recaptcha :sitekey="captchaSiteKey" ref="invisibleRecaptcha" @verify="onVerify" @expired="onExpired" size="invisible"/>
+            <vue-recaptcha ref="invisibleRecaptcha" size="invisible" :sitekey="captchaSiteKey" @verify="onVerify" @expired="onExpired"/>
 
-            <v-btn color="primary" @click="submit" :loading="sendingMail" :disabled="sendingMail">
+            <v-btn color="primary" :loading="sendingMail" :disabled="sendingMail" @click="submit">
               {{ $t('contactComponent.buttonLabel') }}
             </v-btn>
 
@@ -46,7 +46,7 @@
       {{ $t('contactComponent.buttonLabel') }}
       <template v-slot:action="{ attrs }">
         <v-btn color="white" text v-bind="attrs" @click="snackbar.visible = false">
-          {{ $t('contactComponent.snackbarClose') }}
+          {{ $t('contactComponent.snackbar.close') }}
         </v-btn>
       </template>
     </v-snackbar>
