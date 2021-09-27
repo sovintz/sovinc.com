@@ -6,7 +6,7 @@
           <v-col class="white--text" cols="12" md="8" lg="6">
             <!-- Lan -->
             <transition enter-active-class="animate__animated animate__fadeInDown">
-              <h1 v-if="start" class="text-h4 text-md-h1 ">Lan</h1>
+              <h1 v-if="start" class="text-h4 text-md-h1">Lan</h1>
             </transition>
             <h1 v-if="!start" class="text-h4 text-md-h1 font-weight-regular">&zwnj;</h1>
             <!-- Sovinc -->

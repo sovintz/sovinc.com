@@ -5,13 +5,13 @@
            colored-border
            icon="mdi-cookie">
     <v-row align="center">
-      <v-col class="grow">
+      <v-col class="text-subtitle-2">
         {{ $t('cookies.text') }}
       </v-col>
     </v-row>
     <v-row justify="center">
       <v-col class="shrink">
-        <v-btn text color="primary" @click="accept">
+        <v-btn class="sm" color="primary" @click="accept">
           {{ $t('cookies.accept') }}
         </v-btn>
       </v-col>
