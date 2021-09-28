@@ -40,7 +40,7 @@
 
     <!-- form submit snackbar -->
     <v-snackbar v-model="snackbar.visible" :timeout="snackbar.timeout" :color="snackbar.color">
-      {{ $t('contactComponent.buttonLabel') }}
+      {{ snackbar.text }}
       <template v-slot:action="{ attrs }">
         <v-btn color="white" text v-bind="attrs" @click="snackbar.visible = false">
           {{ $t('contactComponent.snackbar.close') }}
@@ -53,7 +53,6 @@
 </template>
 
 <script>
-// import axios from "axios";
 
 export default {
   data() {
@@ -100,29 +99,27 @@ export default {
     async submit() {
       try {
         const token = await this.$recaptcha.execute('login')
-        console.log('ReCaptcha token:', token)
+        // console.log('ReCaptcha token:', token)
         this.sendMessage()
 
       } catch (error) {
-        console.log('Login error:', error)
+        console.log('ReCaptcha error:', error)
         this.snackbar.text = this.$i18n.t('contactComponent.snackbar.textErr')
         this.snackbar.color = "error";
         this.snackbar.visible = true;
       }
-      console.log("submit")
     },
     sendMessage() {
       this.sendingMail = true
-      console.log("send message")
 
-      /* axios.post('/emails/', this.ContactFormData)
+      this.$axios.post('https://formsubmit.co/ajax/lan.sovinc@gmail.com', this.ContactFormData)
         .then(() => {
 
           this.snackbar.text = this.$i18n.t('contactComponent.snackbar.text')
           this.snackbar.color = null;
           this.snackbar.visible = true;
 
-          // clear fields after creating user
+          // Clear fields
           this.$refs.contactForm.reset()
         })
         .catch(() => {
@@ -134,9 +131,9 @@ export default {
         .finally(() => {
           this.sendingMail = false
 
-          // reset captcha
-          this.$refs.invisibleRecaptcha.reset()
-        }) */
+          // Reset captcha
+          this.$recaptcha.reset()
+        })
     }
   }
 }
