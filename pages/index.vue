@@ -68,8 +68,24 @@
 
 <script>
 export default {
-  data() {
+  head () {
+    const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true })
     return {
+      title: this.$i18n.t('homePage.tabTitle'),
+      htmlAttrs: {
+        ...i18nHead.htmlAttrs
+      },
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.$i18n.t('homePage.metaData')
+        },
+        ...i18nHead.meta
+      ],
+      link: [
+        ...i18nHead.link
+      ]
     }
   }
 }

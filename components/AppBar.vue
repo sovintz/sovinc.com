@@ -42,7 +42,9 @@
             v-for="locale in $i18n.locales"
             :key="locale.code"
             nuxt
-            :to="switchLocalePath(locale.code)">
+            :to="switchLocalePath(locale.code)"
+            rel="alternate" :hreflang="locale.code"
+            >
             <v-list-item-icon>
               <v-avatar size="30" tile>
                 <v-img eager :src="`/flags/${locale.code}.svg`"/>

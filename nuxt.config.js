@@ -15,15 +15,10 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: '%s - sovinc.com',
-    title: 'sovinc.com',
-    htmlAttrs: {
-      lang: 'en'
-    },
     meta: [
       {charset: 'utf-8'},
       {name: 'viewport', content: 'width=device-width, initial-scale=1'},
-      {hid: 'description', name: 'description', content: ''},
-      {name: 'format-detection', content: 'telephone=no'},
+      // {name: 'format-detection', content: 'telephone=no'},
       {name: 'theme-color', content:'#1565c0'}
     ],
     link: [
@@ -57,13 +52,16 @@ export default {
     [
       '@nuxtjs/i18n',
       {
+        baseUrl: 'https://sovinc.com',
         locales: [
           {
             code: 'si',
+            iso: 'si-SI',
             name: 'Slovenščina'
           },
           {
             code: 'en',
+            iso: 'en',
             name: 'English'
           }
         ],
