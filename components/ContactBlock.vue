@@ -29,9 +29,6 @@
                 :rules="messageRules"
             ></v-textarea>
 
-            <!-- captcha for button -->
-            <vue-recaptcha ref="invisibleRecaptcha" size="invisible" :sitekey="captchaSiteKey" @verify="onVerify" @expired="onExpired"/>
-
             <v-btn color="primary" :loading="sendingMail" :disabled="sendingMail" @click="submit">
               {{ $t('contactComponent.buttonLabel') }}
             </v-btn>
@@ -57,7 +54,6 @@
 
 <script>
 // import axios from "axios";
-// import VueRecaptcha from 'vue-recaptcha';
 
 export default {
   data() {

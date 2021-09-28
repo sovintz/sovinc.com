@@ -1,19 +1,23 @@
 <template>
 
   <!-- Card -->
-  <v-card class="ma-4" max-width="320">
+  <v-card class="ma-4 d-flex flex-column" max-width="320">
 
-    <v-img contain :src="require(`@/static/images/${projectData.image}`)" height="200px"/>
+    <v-img min-height="250" max-height="250" :src="require(`@/static/images/${projectData.image}`)" height="200px"/>
 
-    <v-card-title>
+    <v-card-title class="text">
       {{ projectData.title }}
     </v-card-title>
 
-    <v-card-subtitle>
+    <v-card-subtitle class="text-wrap">
       {{ projectData.description }}
     </v-card-subtitle>
 
-    <!-- Dialog -->
+    <v-spacer/>
+
+    <v-card-actions v-if="projectData.link">
+      <v-btn text color="primary" @click="openLink(projectData.link);">{{ $t('homePage.projectsSection.button') }}</v-btn>
+    </v-card-actions>
   </v-card>
 
 </template>
@@ -22,10 +26,17 @@
 export default {
   props: {
     projectData: Object
+  },
+  methods:{
+    openLink(link){
+      window.open(link, '_blank')
+    }
   }
 }
 </script>
 
 <style scoped>
-
+.v-card__text, .v-card__title {
+  word-break: normal;
+}
 </style>

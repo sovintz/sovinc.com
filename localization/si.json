@@ -41,16 +41,19 @@
     },
     "projectsSection": {
       "title": "Delo in projekti",
+      "button": "Povezava",
       "projects": [
         {
           "title": "Pikado Real Estate",
           "description": "Razvoj spletne aplikacije za nepremičninsko agencijo.",
-          "image": "pikado_real_estate.png"
+          "image": "pikado_real_estate.png",
+          "link": "https://realestate.pikado.si/si"
         },
         {
-          "title": "Inštitut Jožef Stefan - Odsek za inteligentne sisteme",
+          "title": "IJS - Odsek za inteligentne sisteme",
           "description": "Sodelovanje pri razvoju zalednega dela platforme za elektronsko in mobilno zdravstvo  platformo Insieme.",
-          "image": "insieme.svg"
+          "image": "insieme.png",
+          "link": "http://91.216.54.27:8080/"
         },
         {
           "title": "Osebni projekt IoT",
@@ -60,7 +63,8 @@
         {
           "title": "Bang & Olufsen Slovenija",
           "description": "Urednik spletne strani, fotograf in urednik družbenih omrežij.",
-          "image": "bang_olufsen.jpg"
+          "image": "bang_olufsen.jpg",
+          "link": "https://www.instagram.com/bangolufsen_slovenija/"
         }
       ]
     },

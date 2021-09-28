@@ -6,8 +6,8 @@
     {"title": "Contact", "to": "contact"}
   ],
   "homePage": {
-    "pageTitle": "Sovinc.com",
-    "tabTitle": "Sovinc.com",
+    "pageTitle": "Lan Sovinc",
+    "tabTitle": "Lan Sovinc",
     "metaData": "This is the home page description.",
     "header": {
       "title": "Welcome to my world!",
@@ -17,50 +17,54 @@
       "title": "About",
       "myName": "Lan Sovinc",
       "obtainedTitle": "dip. inž. rač. in inf. (UN) ENG",
-      "description": "ENG Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper porttitor ante. Duis fermentum libero libero, sit amet tristique neque blandit non. Nam sit amet suscipit orci, a porta tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras ac risus id sapien rhoncus mollis a nec arcu. Sed dui lorem, egestas vitae leo eget, mattis imperdiet augue. Curabitur dictum, ante et placerat accumsan, velit neque maximus orci, tristique imperdiet quam ex vitae ipsum. Vivamus gravida odio dui, et convallis mauris rhoncus vitae."
+      "description": "My name is Lan and I am a master's student of computer and information science at the Faculty of Computer and Information Science, University of Ljubljana. I am hardworking and precise, but also articulate and outgoing. I look forward to challenges where I can use my skills to help solve problems while gaining new knowledge and experience. In my free time, I enjoy working on various personal projects in the areas of computer science and programming, electronics, and photography, but I also always find time for family, friends, and sports activities. I am motivated by a desire to progress and help others."
     },
     "competencesSection": {
       "title": "What I do?",
       "competences": [
         {
-          "title": "Full Stack",
-          "description": "ENG A Full Stack Developer is someone who works with the Back End — or server side — of the application as well as the Front End, or client side.",
+          "title": "Web Development",
+          "description": "Development of Full Stack web applications with modern tools and methods (Node.js, Express.js, MongoDB, Vue.js, Nginx, Docker, ...).",
           "icon": "mdi-xml"
         },
         {
-          "title": "Full Stack",
-          "description": "ENG A Full Stack Developer is someone who works with the Back End — or server side — of the application as well as the Front End, or client side.",
+          "title": "IoT Development",
+          "description": "Development of IoT (Internet of Things) systems and programming of IoT devices in programming languages C/C++.",
           "icon": "mdi-xml"
         },
         {
-          "title": "Full Stack",
-          "description": "ENG A Full Stack Developer is someone who works with the Back End — or server side — of the application as well as the Front End, or client side.",
+          "title": "Design and content management",
+          "description": "Designing company web presence, editing WordPress websites and product photography for social networks.",
           "icon": "mdi-xml"
         }
       ]
     },
     "projectsSection": {
       "title": "Work and Projects",
+      "button": "Link",
       "projects": [
         {
-          "title": "Test 1",
-          "description": "ENG Izdelava spletne strani in celostna podoba.",
-          "image": "ljubljana.jpg"
+          "title": "Pikado Real Estate",
+          "description": "Development of a web application for a real estate agency.",
+          "image": "pikado_real_estate.png",
+          "link": "https://realestate.pikado.si/en"
         },
         {
-          "title": "Test 2",
-          "description": "ENG Izdelava spletne strani in celostna podoba.",
-          "image": "ljubljana.jpg"
+          "title": "IJS - Department of Intelligent Systems",
+          "description": "Participation in the development of the backend for electronic and mobile health platform Insieme.",
+          "image": "insieme.png",
+          "link": "http://91.216.54.27:8080/"
         },
         {
-          "title": "Test 3",
-          "description": "ENG Izdelava spletne strani in celostna podoba.",
-          "image": "ljubljana.jpg"
+          "title": "Personal IoT Project",
+          "description": "Development of an IoT Building Heating Control and Management System",
+          "image": "vticnica.jpg"
         },
         {
-          "title": "Test 4",
-          "description": "ENG Izdelava spletne strani in celostna podoba.",
-          "image": "ljubljana.jpg"
+          "title": "Bang & Olufsen Slovenia",
+          "description": "Website editor, product photographer and social media manager.",
+          "image": "bang_olufsen.jpg",
+          "link": "https://www.instagram.com/bangolufsen_slovenija/"
         }
       ]
     },
