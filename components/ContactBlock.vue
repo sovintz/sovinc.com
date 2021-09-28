@@ -112,7 +112,7 @@ export default {
     sendMessage() {
       this.sendingMail = true
 
-      this.$axios.post('https://formsubmit.co/ajax/lan.sovinc@gmail.com', this.ContactFormData)
+      this.$axios.post('https://formsubmit.co/ajax/lan@sovinc.com', this.ContactFormData)
         .then(() => {
 
           this.snackbar.text = this.$i18n.t('contactComponent.snackbar.text')
