@@ -56,8 +56,8 @@ export default {
         baseUrl: 'https://sovinc.com',
         locales: [
           {
-            code: 'si',
-            iso: 'si-SI',
+            code: 'sl',
+            iso: 'sl-SI',
             name: 'Slovenščina'
           },
           {
@@ -66,13 +66,13 @@ export default {
             name: 'English'
           }
         ],
-        defaultLocale: 'si',
+        defaultLocale: 'sl',
         strategy: 'prefix',
         vueI18n: {
-          fallbackLocale: 'si',
+          fallbackLocale: 'sl',
           silentTranslationWarn: process.env.NODE_ENV === 'production',
           messages: {
-            si,
+            sl,
             en
           }
         }
