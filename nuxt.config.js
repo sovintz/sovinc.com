@@ -9,7 +9,8 @@ export default {
   // Router base for GitHub Pages
   router: {
     // TODO: nastavi nazaj na /sovinc.com/
-    base: '/'
+    base: '/',
+    trailingSlash: true
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
