@@ -66,10 +66,11 @@ export default {
             name: 'English'
           }
         ],
-        defaultLocale: 'sl',
+        defaultLocale: 'en',
+        detectBrowserLanguage: true,
         strategy: 'prefix',
         vueI18n: {
-          fallbackLocale: 'sl',
+          fallbackLocale: 'en',
           silentTranslationWarn: process.env.NODE_ENV === 'production',
           messages: {
             sl,
