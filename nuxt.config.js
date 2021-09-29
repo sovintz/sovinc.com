@@ -1,10 +1,10 @@
 import colors from 'vuetify/es5/util/colors'
-import si from './localization/si.json'
+import sl from './localization/sl.json'
 import en from './localization/en.json'
 
 export default {
   // Target: https://go.nuxtjs.dev/config-target
-  target: 'static',
+  // target: 'static',
 
   // Router base for GitHub Pages
   router: {
@@ -72,7 +72,7 @@ export default {
           fallbackLocale: 'sl',
           silentTranslationWarn: process.env.NODE_ENV === 'production',
           messages: {
-            si,
+            sl,
             en
           }
         }
