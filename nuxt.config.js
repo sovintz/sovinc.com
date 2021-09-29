@@ -72,7 +72,7 @@ export default {
           fallbackLocale: 'sl',
           silentTranslationWarn: process.env.NODE_ENV === 'production',
           messages: {
-            sl,
+            si,
             en
           }
         }
