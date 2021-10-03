@@ -30,12 +30,12 @@
         {
           "title": "IoT Development",
           "description": "Development of IoT (Internet of Things) systems and programming of IoT devices in programming languages C/C++.",
-          "icon": "mdi-xml"
+          "icon": "mdi-devices"
         },
         {
           "title": "Design and content management",
           "description": "Designing company web presence, editing WordPress websites and product photography for social networks.",
-          "icon": "mdi-xml"
+          "icon": "mdi-pencil-ruler"
         }
       ]
     },

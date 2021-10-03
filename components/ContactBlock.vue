@@ -3,7 +3,7 @@
     <v-container id="parent">
       <v-row class="py-4">
         <v-col cols="12" class="mb-4">
-          <h3 class="text-h3 text-center">{{ $t('homePage.contactSection.title') }}</h3>
+          <h3 class="text-h4 text-md-h3  text-center">{{ $t('homePage.contactSection.title') }}</h3>
         </v-col>
         <v-col>
           <v-form ref="contactForm">
@@ -98,7 +98,7 @@ export default {
   methods: {
     async submit() {
       try {
-        const token = await this.$recaptcha.execute('login')
+        await this.$recaptcha.execute('login')
         // console.log('ReCaptcha token:', token)
         this.sendMessage()
 

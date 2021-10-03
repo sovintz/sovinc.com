@@ -27,7 +27,7 @@
       <!-- Competences -->
       <v-row id="competences" class="my-8" align="center">
         <v-col cols="12" class="mb-4">
-          <h3 class="text-h3 text-center">{{ $t('homePage.competencesSection.title') }}</h3>
+          <h3 class="text-h4 text-md-h3 text-center">{{ $t('homePage.competencesSection.title') }}</h3>
         </v-col>
         <v-col v-for="(competence, index) in $i18n.t('homePage.competencesSection.competences')" :key="index" cols=12 class="col-md-4 text-center">
           <v-avatar color="primary" size="150">
@@ -45,7 +45,7 @@
       <!-- Projects -->
       <v-row id="projects">
         <v-col cols="12" class="mb-4">
-          <h3 class="text-h3 text-center">{{ $t('homePage.projectsSection.title') }}</h3>
+          <h3 class="text-h4 text-md-h3 text-center">{{ $t('homePage.projectsSection.title') }}</h3>
         </v-col>
         <v-col cols="12" class="mb-4">
           <v-slide-group active-class="success" show-arrows center-active>
