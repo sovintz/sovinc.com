@@ -25,8 +25,11 @@
           </v-col>
           <!-- Header Button -->
           <v-col>
-            <v-btn color="accent" :x-large="$vuetify.breakpoint.mdAndUp" :loading="loader" @click="loader=true; startTour()">
-              {{ $t('homePage.header.button') }}
+            <v-btn class="ma-1" color="white" outlined :x-large="$vuetify.breakpoint.mdAndUp" :loading="loader1" @click="loader1=true; startTour('#about')">
+              {{ $t('homePage.header.buttonIntroduction') }}
+            </v-btn>
+            <v-btn class="ma-1" color="accent" :x-large="$vuetify.breakpoint.mdAndUp" :loading="loader2" @click="loader2=true; startTour('#contact')">
+              {{ $t('homePage.header.buttonIContact') }}
             </v-btn>
           </v-col>
         </v-row>
@@ -43,17 +46,19 @@ export default {
   data() {
     return {
       start: false,
-      loader: false,
+      loader1: false,
+      loader2: false,
       timeout: 1500
     }
   },
   methods: {
     // Start Tour
-    startTour() {
+    startTour(target) {
       this.start = true;
       setTimeout(() => {
-        this.$vuetify.goTo('#about')
-        this.loader = false;
+        this.$vuetify.goTo(target)
+        this.loader1 = false;
+        this.loader2 = false;
         this.timeout = 0;
       }, this.timeout);
     }

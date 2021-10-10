@@ -11,7 +11,8 @@
     "metaData": "My name is Lan and I am a master's student of computer and information science at the Faculty of Computer and Information Science, University of Ljubljana.",
     "header": {
       "title": "Welcome to my world!",
-      "button": "Introduction"
+      "buttonIntroduction": "Introduction",
+      "buttonIContact": "Contact"
     },
     "aboutSection": {
       "title": "About",

@@ -47,12 +47,8 @@
         <v-col cols="12" class="mb-4">
           <h3 class="text-h4 text-md-h3 text-center">{{ $t('homePage.projectsSection.title') }}</h3>
         </v-col>
-        <v-col cols="12" class="mb-4">
-          <v-slide-group active-class="success" show-arrows center-active>
-            <v-slide-item v-for="project in $i18n.t('homePage.projectsSection.projects')" :key="project.title">
+        <v-col cols="12" sm="6" lg="4" xl="3" class="mb-4" v-for="project in $i18n.t('homePage.projectsSection.projects')" :key="project.title">
               <ProjectCard class="ma-4" :projectData="project"/>
-            </v-slide-item>
-          </v-slide-group>
         </v-col>
       </v-row>
     </v-container>

@@ -11,7 +11,8 @@
     "metaData": "Moje ime je Lan in sem študent magistrskega študija Računalništvo in informatika Fakultete za računalništvo in informatiko Univerze v Ljubljani.",
     "header": {
       "title": "Dobrodošli v moj svet!",
-      "button": "Predstavitev"
+      "buttonIntroduction": "Predstavitev",
+      "buttonIContact": "Kontakt"
     },
     "aboutSection": {
       "title": "O meni",
