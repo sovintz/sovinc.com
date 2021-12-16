@@ -77,6 +77,7 @@ export default {
   background-attachment: fixed;
   background-position: right;
   background-repeat: no-repeat;
+  background-size: 100%;
   background-size: cover;
 }
 </style>
