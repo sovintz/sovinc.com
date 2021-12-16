@@ -74,7 +74,8 @@ export default {
 
   background-image:url("~static/images/header.jpg");
 
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
+  background-attachment: scroll;
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
