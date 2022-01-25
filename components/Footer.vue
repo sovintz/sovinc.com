@@ -39,7 +39,7 @@ export default {
       } else if (contact === "linkedin") {
         window.open("https://www.linkedin.com/in/lan-sovinc/", "_blank");
       } else if (contact === "github") {
-        window.open("https://github.com/sovaCode", "_blank");
+        window.open("https://github.com/sovintz", "_blank");
       }
     }
   }
