@@ -10,5 +10,12 @@
 </template>
 
 <script>
-export default {}
+export default {
+
+mounted() {
+  window.onscroll = () => {
+    this.scrollPosition = document.documentElement.scrollTop;
+  };
+}
+}
 </script>

@@ -1,17 +1,17 @@
 <template>
   <div class="appbar">
 
-    <v-app-bar :color="scrolled ? 'primary' : 'transparent'" dark app elevate-on-scroll>
+    <v-app-bar :color="position[1] > 0 ? 'primary' : 'transparent'" dark app elevate-on-scroll>
 
       <!-- AppBar Text Title -->
-      <v-toolbar-title class="white--text text-uppercase text-center" style="cursor: pointer" @click="$vuetify.goTo('#header')">
+      <v-toolbar-title class="white--text text-uppercase text-center" style="cursor: pointer" @click="$vuetify.goTo('#header', {duration:2000})">
         Sovinc.com
       </v-toolbar-title>
 
       <v-spacer/>
 
       <v-btn v-for="(item, index) in $i18n.t('navMenu')" :key="index" plain class="ma-2 hidden-sm-and-down"
-             @click="$vuetify.goTo('#' + item.to)">
+             @click="$vuetify.goTo('#' + item.to, {duration:2000})">
         {{ $t(item.title) }}
       </v-btn>
 
@@ -64,7 +64,7 @@
       <v-list nav>
         <v-list-item-group v-model="group" active-class="primary--text text--accent-4">
           <v-list-item v-for="(item, index) in $i18n.t('navMenu')" :key="index"
-                       @click="$vuetify.goTo('#' + item.to); drawer=false">
+                       @click="$vuetify.goTo('#' + item.to, {duration:2000}); drawer=false">
             {{ (item.title) }}
           </v-list-item>
         </v-list-item-group>
@@ -115,12 +115,14 @@
 </template>
 
 <script>
+import windowScrollPosition from '../mixins/global.js'
+
 export default {
   name: "Projects",
+  mixins: [windowScrollPosition('position')],
   data: () => ({
     drawer: false,
     group: null,
-    scrolled: false,
     icons: [
       'mdi-email',
       'mdi-linkedin',
@@ -128,9 +130,6 @@ export default {
     ],
   }),
   mounted() {
-    window.onscroll = () => {
-      this.scrolled = document.documentElement.scrollTop
-    };
   },
   methods: {
     contact(contact) {
@@ -148,5 +147,8 @@ export default {
 </script>
 
 <style scoped>
+.appbar{
+  z-index: 100;
+}
 
 </style>
