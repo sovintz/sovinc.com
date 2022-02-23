@@ -8,25 +8,25 @@
         <v-col>
           <v-form ref="contactForm">
             <v-text-field
-                v-model="ContactFormData.name"
-                :counter="32"
-                :label="$t('contactComponent.formNameLabel')"
-                required
-                :rules="nameRules"
+              v-model="ContactFormData.name"
+              :counter="32"
+              :label="$t('contactComponent.formNameLabel')"
+              required
+              :rules="nameRules"
             ></v-text-field>
             <v-text-field
-                v-model="ContactFormData.email"
-                :counter="128"
-                :label="$t('contactComponent.formEmailLabel')"
-                required
-                :rules="emailRules"
+              v-model="ContactFormData.email"
+              :counter="128"
+              :label="$t('contactComponent.formEmailLabel')"
+              required
+              :rules="emailRules"
             ></v-text-field>
             <v-textarea
-                v-model="ContactFormData.message"
-                :counter="1024"
-                :label="$t('contactComponent.formMessageLabel')"
-                required
-                :rules="messageRules"
+              v-model="ContactFormData.message"
+              :counter="1024"
+              :label="$t('contactComponent.formMessageLabel')"
+              required
+              :rules="messageRules"
             ></v-textarea>
 
             <v-btn color="primary" :loading="sendingMail" :disabled="sendingMail" @click="submit">
@@ -98,9 +98,11 @@ export default {
   methods: {
     async submit() {
       try {
-        await this.$recaptcha.execute('login')
-        // console.log('ReCaptcha token:', token)
-        this.sendMessage()
+        if (this.$refs.contactForm.validate()) {
+          await this.$recaptcha.execute('login')
+          // console.log('ReCaptcha token:', token)
+          this.sendMessage()
+        }
 
       } catch (error) {
         console.log('ReCaptcha error:', error)
