@@ -1,5 +1,5 @@
 <template>
-  <div style="height:250vh">
+  <div style="height:180vh">
     <v-img class="parallax" height="100%" :gradient="$vuetify.breakpoint.smAndDown ? '68deg, #1565C0 20%, transparent': '68deg, #1565C0 35%, transparent'"
            style="position: sticky; top:0;">
       <v-container fill-height>
@@ -49,14 +49,17 @@ export default {
   mounted() {
   },
   computed:{
+    /* com(){
+      return `opacity: ${1 - this.position[1]/400}`
+    }, */
     com(){
-      return `opacity: ${1 - this.position[1]/1000}`
+      return `transform: translateY(${ -this.position[1]/10 }vh); opacity: ${1 - this.position[1]/400}`
     },
     lan(){
-      return `transform: translateY(${ Math.max(0, 100 - this.position[1]) }px); opacity: ${this.position[1]/800}`
+      return `transform: translateY(${ Math.max(0, 50 - this.position[1]/10) }vh); opacity: ${this.position[1]/400}`
     },
     headerText(){
-      return `transform: translateY(${ Math.max(0, 100 - this.position[1]) }px); opacity: ${this.position[1]/800}`
+      return `transform: translateY(${ Math.max(0, 50 - this.position[1]/10) }vh); opacity: ${this.position[1]/400}`
     }
   }
 }
@@ -68,9 +71,9 @@ export default {
 
   background-image:url("~static/images/header.jpg");
 
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   background-attachment: scroll;
-  background-position: right;
+  background-position: 75%;
   background-repeat: no-repeat;
   background-size: cover;
 }
