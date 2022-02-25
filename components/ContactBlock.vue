@@ -61,7 +61,9 @@ export default {
       ContactFormData: {
         name: '',
         email: '',
-        message: ''
+        message: '',
+        captchaToken: ''
+
       },
       sendingMail: false,
       snackbar: {
@@ -99,8 +101,9 @@ export default {
     async submit() {
       try {
         if (this.$refs.contactForm.validate()) {
-          await this.$recaptcha.execute('login')
+          const token = await this.$recaptcha.execute('login')
           // console.log('ReCaptcha token:', token)
+          this.ContactFormData.captchaToken = token
           this.sendMessage()
         }
 
@@ -123,6 +126,7 @@ export default {
 
           // Clear fields
           this.$refs.contactForm.reset()
+          this.ContactFormData.captchaToken = ''
         })
         .catch(() => {
 
