@@ -1,3 +1,5 @@
+<template><p>Business Card</p></template>
+
 <script>
 export default {
   name: "business-card",
