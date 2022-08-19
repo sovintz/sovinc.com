@@ -67,7 +67,12 @@ export default {
           }
         ],
         defaultLocale: 'en',
-        detectBrowserLanguage: true,
+        detectBrowserLanguage: {
+          alwaysRedirect: false,
+          fallbackLocale: 'en',
+          redirectOn: 'root',
+          useCookie: false,
+        },
         strategy: 'prefix',
         vueI18n: {
           fallbackLocale: 'en',
