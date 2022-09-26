@@ -3,7 +3,7 @@
   <!-- Card -->
   <v-card class="ma-auto d-flex flex-column" max-width="320">
 
-    <v-img min-height="250" max-height="250" :src="require(`@/static/images/${projectData.image}`)" height="200px"/>
+    <v-img min-height="250" max-height="250" height="200px" :src="require(`@/static/images/${projectData.image}`)" :alt="projectData.altText"/>
 
     <v-card-title class="text">
       {{ projectData.title }}

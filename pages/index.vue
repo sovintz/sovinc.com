@@ -12,7 +12,7 @@
       <v-row id="about" class="my-8" align="center">
         <v-col cols=12 class="col-md-4 text-center">
           <v-avatar size="200">
-            <img src="~static/images/lan_sovinc.jpg"/>
+            <img src="~static/images/lan_sovinc.jpg" :alt="this.$i18n.t('homePage.aboutSection.altText')"/>
           </v-avatar>
           <h5 class="text-h5 mt-2">{{ $t('homePage.aboutSection.myName') }}</h5>
           <p class="text-subtitle-1">{{ $t('homePage.aboutSection.obtainedTitle') }}</p>
