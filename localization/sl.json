@@ -17,6 +17,7 @@
     "aboutSection": {
       "title": "O meni",
       "myName": "Lan Sovinc",
+      "altText": "Lan Sovinc, profilna slika",
       "obtainedTitle": "dip. inž. rač. in inf. (UN)",
       "description": "Moje ime je Lan in sem študent magistrskega študija Računalništvo in informatika Fakultete za računalništvo in informatiko Univerze v Ljubljani. Sem delaven in natančen, vendar tudi zgovoren in družaben. Veselijo me izzivi, kjer lahko s svojim znanjem pomagam reševati probleme ter hkrati pridobivam nova znanja in izkušnje. V prostem času se rad lotevam različnih osebnih projektov, povezanih z računalništvom in programiranjem, elektroniko ter fotografijo, vedno pa najdem čas za družino, prijatelje in športne aktivnosti. Motivira me želja po napredku in pomoči drugim."
     },
@@ -48,23 +49,27 @@
           "title": "Pikado Real Estate",
           "description": "Razvoj spletne aplikacije za nepremičninsko agencijo.",
           "image": "pikado_real_estate.png",
+          "altText": "Slika projekta Pikado Real Estate",
           "link": "https://realestate.pikado.si/si"
         },
         {
           "title": "IJS - Odsek za inteligentne sisteme",
           "description": "Sodelovanje pri razvoju zalednega dela platforme za elektronsko in mobilno zdravstvo  platformo Insieme.",
           "image": "insieme.png",
+          "altText": "Slika projekta Insieme",
           "link": "http://91.216.54.27:8080/"
         },
         {
           "title": "Osebni projekt IoT",
           "description": "Razvoj sistema IoT za nadzor in upravljanje ogrevanja objekta.",
-          "image": "vticnica.jpg"
+          "image": "vticnica.jpg",
+          "altText": "Slika IoT vtičnice"
         },
         {
           "title": "Bang & Olufsen Slovenija",
           "description": "Urednik spletne strani, fotograf in urednik družbenih omrežij.",
           "image": "bang_olufsen.jpg",
+          "altText": "Slika projekta Bang & Olufsen",
           "link": "https://www.instagram.com/bangolufsen_slovenija/"
         }
       ]

@@ -17,6 +17,7 @@
     "aboutSection": {
       "title": "About",
       "myName": "Lan Sovinc",
+      "altText": "Lan Sovinc profile picture",
       "obtainedTitle": "BS, Computer and Information Science",
       "description": "My name is Lan and I am a master's student of computer and information science at the Faculty of Computer and Information Science, University of Ljubljana. I am hardworking and precise, but also articulate and outgoing. I look forward to challenges where I can use my skills to help solve problems while gaining new knowledge and experience. In my free time, I enjoy working on various personal projects in the areas of computer science and programming, electronics, and photography, but I also always find time for family, friends, and sports activities. I am motivated by a desire to progress and help others."
     },
@@ -48,23 +49,27 @@
           "title": "Pikado Real Estate",
           "description": "Development of a web application for a real estate agency.",
           "image": "pikado_real_estate.png",
+          "altText": "Pikado Real Estate project image",
           "link": "https://realestate.pikado.si/en"
         },
         {
           "title": "IJS - Department of Intelligent Systems",
           "description": "Participation in the development of the backend for electronic and mobile health platform Insieme.",
           "image": "insieme.png",
+          "altText": "Insieme project image",
           "link": "http://91.216.54.27:8080/"
         },
         {
           "title": "Personal IoT Project",
           "description": "Development of an IoT Building Heating Control and Management System",
-          "image": "vticnica.jpg"
+          "image": "vticnica.jpg",
+          "altText": "IoT plug image"
         },
         {
           "title": "Bang & Olufsen Slovenia",
           "description": "Website editor, product photographer and social media manager.",
           "image": "bang_olufsen.jpg",
+          "altText": "Bang & Olufsen project image",
           "link": "https://www.instagram.com/bangolufsen_slovenija/"
         }
       ]
