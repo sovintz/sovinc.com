@@ -12,7 +12,7 @@
     "header": {
       "title": "Welcome to my world!",
       "buttonIntroduction": "Introduction",
-      "buttonIContact": "Contact"
+      "buttonContact": "Contact"
     },
     "aboutSection": {
       "title": "About",
