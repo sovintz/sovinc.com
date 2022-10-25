@@ -1,6 +1,6 @@
 <template>
   <div style="height:180vh">
-    <v-img class="parallax" height="100%" width="100%" :gradient="$vuetify.breakpoint.smAndDown ? '68deg, #1565C0 20%, transparent': '68deg, #1565C0 35%, transparent'"
+    <v-img class="parallax" height="100%" width="100%" :gradient="$vuetify.breakpoint.smAndDown ? `68deg, ${$vuetify.theme.currentTheme.primary} 20%, transparent`: `68deg, ${$vuetify.theme.currentTheme.primary} 35%, transparent`"
            style="position: sticky; top:0;">
       <v-container fill-height>
         <v-row class="white--text ma-8  ma-md-0" align="center" justify="start">

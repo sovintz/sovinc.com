@@ -29,9 +29,7 @@
         <!-- dropdown activator & button -->
         <template v-slot:activator="{ on, attrs }">
           <v-btn class="ma-2 hidden-sm-and-down" text plain v-bind="attrs" v-on="on">
-            <v-avatar size="30" tile>
-              <v-img eager :src="`/flags/${$i18n.locale}.svg`"/>
-            </v-avatar>
+            {{ $i18n.locale }}
           </v-btn>
         </template>
 
@@ -43,12 +41,6 @@
             :key="locale.code"
             :to="switchLocalePath(locale.code)"
             >
-            <v-list-item-icon>
-              <v-avatar size="30" tile>
-                <v-img eager :src="`/flags/${locale.code}.svg`"/>
-              </v-avatar>
-            </v-list-item-icon>
-
             <v-list-item-title v-text="locale.name"/>
           </v-list-item>
 
@@ -80,35 +72,26 @@
       </div>
 
       <!-- Mobile Language Selector -->
-      <v-menu offset-y>
-        <!-- Dropdown Activator & Button -->
-        <template v-slot:activator="{ on, attrs }">
-
-          <v-list>
-            <v-list-item text v-bind="attrs" v-on="on">
-              <v-avatar size="30" tile>
-                <v-img eager :src="`/flags/${$i18n.locale}.svg`"/>
-              </v-avatar>
-            </v-list-item>
-          </v-list>
-        </template>
-
-        <!-- Mobile Dropdown Rendering -->
-        <v-list>
+      <!-- Dropdown Activator & Button -->
+      <v-list>
+        <v-list-group>
+          <template v-slot:activator>
+            <v-list-item-content>
+              <v-list-item-title class="text-uppercase">{{ $i18n.locale }}</v-list-item-title>
+            </v-list-item-content>
+          </template>
+          <!-- Mobile Dropdown Rendering -->
           <v-list-item
             v-for="locale in $i18n.locales"
             :key="locale.code"
             nuxt
             :to="switchLocalePath(locale.code)">
-            <v-list-item-icon>
-              <v-avatar size="30" tile>
-                <v-img eager :src="`/flags/${locale.code}.svg`"/>
-              </v-avatar>
-            </v-list-item-icon>
-            <v-list-item-title v-text="locale.name"/>
+            <v-list-item-content>
+              <v-list-item-title v-text="locale.name"/>
+            </v-list-item-content>
           </v-list-item>
-        </v-list>
-      </v-menu>
+        </v-list-group>
+      </v-list>
 
     </v-navigation-drawer>
   </div>
@@ -123,6 +106,7 @@ export default {
   data: () => ({
     drawer: false,
     group: null,
+    // TODO: move to language
     icons: [
       'mdi-email',
       'mdi-linkedin',

@@ -8,7 +8,6 @@ export default {
 
   // Router base for GitHub Pages
   router: {
-    // TODO: nastavi nazaj na /sovinc.com/
     base: '/',
     trailingSlash: true
   },
@@ -28,6 +27,7 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
+  // TODO: remove here npm??
   css: [
     'animate.css/animate.min.css'
   ],
@@ -58,14 +58,18 @@ export default {
           {
             code: 'sl',
             iso: 'sl-SI',
-            name: 'Slovenščina'
+            name: 'Slovenščina',
+            file: 'sl.json'
           },
           {
             code: 'en',
             iso: 'en',
-            name: 'English'
+            name: 'English',
+            file: 'en.json'
           }
         ],
+        lazy: true,
+        langDir: "localization/",
         defaultLocale: 'en',
         detectBrowserLanguage: {
           alwaysRedirect: false,

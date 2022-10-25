@@ -57,7 +57,6 @@
 export default {
   data() {
     return {
-      captchaSiteKey: '6LckRXAcAAAAAJZBXZHcVVUoGSS7Nnc-KGBJkKt4',
       ContactFormData: {
         name: '',
         email: '',
