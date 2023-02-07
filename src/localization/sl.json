@@ -53,6 +53,13 @@
           "link": "https://realestate.pikado.si/si"
         },
         {
+          "title": "LetterBot",
+          "description": "Razvoj spletnega generatorja motivacijskih pisem z umetno inteligenco.",
+          "image": "letterbot.png",
+          "altText": "Slika projekta LetterBot",
+          "link": "https://letterbot.webturtlelabs.com/"
+        },
+        {
           "title": "IJS - Odsek za inteligentne sisteme",
           "description": "Sodelovanje pri razvoju zalednega dela platforme za elektronsko in mobilno zdravstvo  platformo Insieme.",
           "image": "insieme.png",

@@ -53,6 +53,13 @@
           "link": "https://realestate.pikado.si/en"
         },
         {
+          "title": "LetterBot",
+          "description": "Development of an AI-power web motivation letter generator.",
+          "image": "letterbot.png",
+          "altText": "LetterBot project image",
+          "link": "https://letterbot.webturtlelabs.com/"
+        },
+        {
           "title": "IJS - Department of Intelligent Systems",
           "description": "Participation in the development of the backend for electronic and mobile health platform Insieme.",
           "image": "insieme.png",
