@@ -18,15 +18,15 @@
       "title": "O meni",
       "myName": "Lan Sovinc",
       "altText": "Lan Sovinc, profilna slika",
-      "obtainedTitle": "dip. inž. rač. in inf. (UN)",
-      "description": "Moje ime je Lan in sem študent magistrskega študija Računalništvo in informatika Fakultete za računalništvo in informatiko Univerze v Ljubljani. Sem delaven in natančen, vendar tudi zgovoren in družaben. Veselijo me izzivi, kjer lahko s svojim znanjem pomagam reševati probleme ter hkrati pridobivam nova znanja in izkušnje. V prostem času se rad lotevam različnih osebnih projektov, povezanih z računalništvom in programiranjem, elektroniko ter fotografijo, vedno pa najdem čas za družino, prijatelje in športne aktivnosti. Motivira me želja po napredku in pomoči drugim."
+      "obtainedTitle": "mag. inž. rač. in inf. (UN)",
+      "description": "Moje ime je Lan in sem razvijalec programske opreme. Sem delaven in natančen, vendar tudi zgovoren in družaben. Veselijo me izzivi, kjer lahko s svojim znanjem pomagam reševati probleme ter hkrati pridobivam nova znanja in izkušnje. V prostem času se rad lotevam različnih osebnih projektov, povezanih z računalništvom in programiranjem, elektroniko ter fotografijo, vedno pa najdem čas za družino, prijatelje in športne aktivnosti. Motivira me želja po napredku in pomoči drugim."
     },
     "competencesSection": {
       "title": "Kaj počnem?",
       "competences": [
         {
           "title": "Spletno programiranje",
-          "description": "Razvoj Full Stack spletnih aplikacij s sodobnimi orodji in metodami (Node.js, Express.js, MongoDB, Vue.js, Nginx, Docker, ...).",
+          "description": "Razvoj Full Stack spletnih aplikacij s sodobnimi orodji in metodami (Node.js, Express.js, MongoDB, React, Next.js, Vue.js, Nginx, Docker, ...).",
           "icon": "mdi-xml"
         },
         {
@@ -56,8 +56,7 @@
           "title": "LetterBot",
           "description": "Razvoj spletnega generatorja motivacijskih pisem z umetno inteligenco.",
           "image": "letterbot.png",
-          "altText": "Slika projekta LetterBot",
-          "link": "https://letterbot.webturtlelabs.com/"
+          "altText": "Slika projekta LetterBot"
         },
         {
           "title": "IJS - Odsek za inteligentne sisteme",

@@ -18,15 +18,15 @@
       "title": "About",
       "myName": "Lan Sovinc",
       "altText": "Lan Sovinc profile picture",
-      "obtainedTitle": "BS, Computer and Information Science",
-      "description": "My name is Lan and I am a master's student of computer and information science at the Faculty of Computer and Information Science, University of Ljubljana. I am hardworking and precise, but also articulate and outgoing. I look forward to challenges where I can use my skills to help solve problems while gaining new knowledge and experience. In my free time, I enjoy working on various personal projects in the areas of computer science and programming, electronics, and photography, but I also always find time for family, friends, and sports activities. I am motivated by a desire to progress and help others."
+      "obtainedTitle": "MSc, Computer and Information Science",
+      "description": "My name is Lan and I am a software developer. I am hardworking and precise, but also articulate and outgoing. I look forward to challenges where I can use my skills to help solve problems while gaining new knowledge and experience. In my free time, I enjoy working on various personal projects in the areas of computer science and programming, electronics, and photography, but I also always find time for family, friends, and sports activities. I am motivated by a desire to progress and help others."
     },
     "competencesSection": {
       "title": "What I do?",
       "competences": [
         {
           "title": "Web Development",
-          "description": "Development of Full Stack web applications with modern tools and methods (Node.js, Express.js, MongoDB, Vue.js, Nginx, Docker, ...).",
+          "description": "Development of Full Stack web applications with modern tools and methods (Node.js, Express.js, MongoDB, React, Next.js, Vue.js, Nginx, Docker, ...).",
           "icon": "mdi-xml"
         },
         {
@@ -56,8 +56,7 @@
           "title": "LetterBot",
           "description": "Development of an AI-power web motivation letter generator.",
           "image": "letterbot.png",
-          "altText": "LetterBot project image",
-          "link": "https://letterbot.webturtlelabs.com/"
+          "altText": "LetterBot project image"
         },
         {
           "title": "IJS - Department of Intelligent Systems",
