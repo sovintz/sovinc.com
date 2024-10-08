@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{567:function(e,n,d){"use strict";d.r(n);var r={name:"business-card",middleware:"businessCard"},w=d(66),component=Object(w.a)(r,undefined,undefined,!1,null,"9b049102",null);n.default=component.exports}}]);
