@@ -46,6 +46,13 @@
       "button": "Povezava",
       "projects": [
         {
+          "title": "Yelay",
+          "description": "Sodelovanje pri razvoju platforme, ki institucijam omogoča enostaven dostop do strategij donosa DeFi in upravljanje tveganju-prilagojenih portfeljev.",
+          "image": "yelay.png",
+          "altText": "Yelay project image",
+          "link": "https://app.yelay.io"
+        },
+        {
           "title": "Pikado Real Estate",
           "description": "Razvoj spletne aplikacije za nepremičninsko agencijo.",
           "image": "pikado_real_estate.png",

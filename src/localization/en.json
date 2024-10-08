@@ -46,6 +46,13 @@
       "button": "Link",
       "projects": [
         {
+          "title": "Yelay",
+          "description": "Collaborated on the development of a platform that allows institutions to easily access DeFi yield strategies and to manage risk-adjusted portfolios.",
+          "image": "yealy.png",
+          "altText": "Yelay project image",
+          "link": "https://app.yelay.io"
+        },
+        {
           "title": "Pikado Real Estate",
           "description": "Development of a web application for a real estate agency.",
           "image": "pikado_real_estate.png",
@@ -60,7 +67,7 @@
         },
         {
           "title": "IJS - Department of Intelligent Systems",
-          "description": "Participation in the development of the backend for electronic and mobile health platform Insieme.",
+          "description": "Collaborated on the development of the backend for electronic and mobile health platform Insieme.",
           "image": "insieme.png",
           "altText": "Insieme project image",
           "link": "http://91.216.54.27:8080/"
