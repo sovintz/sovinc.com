@@ -1,0 +1,193 @@
+{
+  "navbar": {
+    "navMenu": [
+      {
+        "title": "O meni",
+        "to": "#about"
+      },
+      {
+        "title": "Znanja",
+        "to": "#competences"
+      },
+      {
+        "title": "Izkušnje",
+        "to": "#projects"
+      },
+      {
+        "title": "Kontakt",
+        "to": "#contact"
+      }
+    ],
+    "localeSwitcher": {
+      "en": "English",
+      "sl": "slovenščina"
+    }
+  },
+  "homePage": {
+    "pageTitle": "Lan Sovinc",
+    "tabTitle": "Lan Sovinc",
+    "metaData": "Moje ime je Lan in sem inženir programske opreme. Magistrski študij sem opravil na Fakulteti za računalništvo in informatiko Univerze v Ljubljani.",
+    "hero": {
+      "buttonContact": "Kontakt",
+      "typewriter": {
+        "base": "Sem ",
+        "nouns": [
+          "tehnološki pragmatik",
+          "razvijalec",
+          "mali podjetnik",
+          "IoT navdušenec",
+          "prijatelj",
+          "DIY mojster",
+          "vedoželjen"
+        ]
+      }
+    },
+    "aboutSection": {
+      "title": "O meni",
+      "myName": "Lan Sovinc",
+      "altText": "Lan Sovinc, profilna slika",
+      "obtainedTitle": "Inženir \"Full Stack\"",
+      "description": "Moje ime je Lan in sem inženir programske opreme. Magistrski študij sem opravil na Fakulteti za računalništvo in informatiko Univerze v Ljubljani. Sem delaven in natančen, vendar tudi zgovoren in družaben. Veselijo me izzivi, kjer lahko s svojim znanjem pomagam reševati probleme ter hkrati pridobivam nova znanja in izkušnje. V prostem času se rad lotevam različnih osebnih projektov, povezanih z računalništvom in programiranjem, elektroniko ter fotografijo, vedno pa najdem čas za družino, prijatelje in športne aktivnosti. Motivira me želja po napredku in pomoči drugim."
+    },
+    "competencesSection": {
+      "title": "Kaj počnem?",
+      "competences": [
+        {
+          "title": "Spletno programiranje",
+          "description": "Razvoj Full Stack spletnih aplikacij s sodobnimi orodji in metodami (Node.js, Express.js, MongoDB, React, Next.js, Vue.js, Nginx, Docker, ...).",
+          "icon": "code"
+        },
+        {
+          "title": "Razvoj IoT",
+          "description": "Razvoj sistemov za IoT (Internet of Things) in programiranje naprav IoT v programskih jezikih C/C++.",
+          "icon": "monitorSmartphone"
+        },
+        {
+          "title": "Oblikovanje in urejanje",
+          "description": "Oblikovanje spletne podobe podjetij, urejanje spletnih strani WordPress in fotografiranje za družbena omrežja.",
+          "icon": "pencilRuler"
+        }
+      ]
+    },
+    "projectsSection": {
+      "title": "Delo in projekti",
+      "button": "Povezava",
+      "projects": [
+        {
+          "title": "Lama Bot",
+          "description": "Razvoj platforme za samodejno komunikacijo z obiskovalci spletne strani in avtomatizaciji interakcij s strankami.",
+          "image": "/images/lamabot.png",
+          "altText": "Slika projekta Lama Bot",
+          "link": "https://bot.lama-labs.com/sl"
+        },
+        {
+          "title": "Bonfires.ai",
+          "description": "Sodelovanje pri razvoju AI platforme, kjer skupnosti sodelujejo pri uvajanju večagentnih sistemov za skupno razumevanje in upravljanje (blockchain).",
+          "image": "/images/bonfires.png",
+          "altText": "Slika projekta Bonfires.ai",
+          "link": "https://bonfires.ai"
+        },
+        {
+          "title": "Yelay",
+          "description": "Sodelovanje pri razvoju platforme, ki institucijam omogoča enostaven dostop do strategij donosa DeFi in upravljanje tveganju-prilagojenih portfeljev.",
+          "image": "/images/yelay.png",
+          "altText": "Slika projekta Yelay",
+          "link": "https://app.yelay.io"
+        },
+        {
+          "title": "Pikado Real Estate",
+          "description": "Razvoj spletne aplikacije za nepremičninsko agencijo.",
+          "image": "/images/pikado_real_estate.png",
+          "altText": "Slika projekta Pikado Real Estate",
+          "link": "https://realestate.pikado.si/si"
+        },
+        {
+          "title": "LetterBot",
+          "description": "Razvoj spletnega generatorja motivacijskih pisem z umetno inteligenco.",
+          "image": "/images/letterbot.png",
+          "altText": "Slika projekta LetterBot"
+        },
+        {
+          "title": "IJS - Odsek za inteligentne sisteme",
+          "description": "Sodelovanje pri razvoju zalednega dela platforme za elektronsko in mobilno zdravstvo  platformo Insieme.",
+          "image": "/images/insieme.png",
+          "altText": "Slika projekta Insieme",
+          "link": "http://91.216.54.27:8080/"
+        },
+        {
+          "title": "Osebni projekt IoT",
+          "description": "Razvoj sistema IoT za nadzor in upravljanje ogrevanja objekta.",
+          "image": "/images/vticnica.jpg",
+          "altText": "Slika IoT vtičnice"
+        },
+        {
+          "title": "Bang & Olufsen Slovenija",
+          "description": "Urednik spletne strani, fotograf in urednik družbenih omrežij.",
+          "image": "/images/bang_olufsen.jpg",
+          "altText": "Slika projekta Bang & Olufsen",
+          "link": "https://www.instagram.com/bangolufsen_slovenija/"
+        }
+      ]
+    }
+  },
+  "contactComponent": {
+    "formTitle": "Pošljite mi sporočilo",
+    "formDescription": "Pošljite mi sporočilo, ali samo pozdravite!",
+    "form": {
+      "name": {
+        "label": "Ime*",
+        "placeholder": "Vaše ime",
+        "required": "Ime je obvezno",
+        "maxLength": "Ime mora biti krajše od 32 znakov"
+      },
+      "email": {
+        "label": "E-mail*",
+        "placeholder": "Vaš e-mail",
+        "required": "E-mail je obvezno",
+        "invalid": "E-mail naslov mora bit veljaven",
+        "maxLength": "E-mail mora biti krajši od 128 znakov"
+      },
+      "message": {
+        "label": "Sporočilo*",
+        "placeholder": "Vaše sporočilo",
+        "required": "Sporočilo je obvezno",
+        "maxLength": "Sporočilo mora biti krajše od 2048 znakov"
+      },
+      "buttonLabel": "Oddaj",
+      "submitting": "Pošiljam...",
+      "success": "Sporočilo uspešno poslano!",
+      "error": "Napaka pri pošiljanju sporočila. Poskusite ponovno."
+    },
+    "snackbar": {
+      "text": "Sporočilo poslano",
+      "textErr": "Napaka pri pošiljanju sporočila",
+      "close": "Zapri"
+    }
+  },
+  "footer": {
+    "copyright": "Lan Sovinc | Vse pravice pridržane"
+  },
+  "cookies": {
+    "title": "Soglasje za piškotke",
+    "message": "Ta stran uporablja piškotke za delovanje in analitiko. Uporabljamo piškotke za izboljšanje vaše brskalne izkušnje in analizo prometa.",
+    "accept": "Sprejmi",
+    "reject": "Zavrni"
+  },
+  "socialIcons": [
+    {
+      "icon": "mail",
+      "href": "mailto:lan@sovinc.com",
+      "label": "Email"
+    },
+    {
+      "icon": "linkedin",
+      "href": "https://linkedin.com/in/lan-sovinc",
+      "label": "LinkedIn"
+    },
+    {
+      "icon": "github",
+      "href": "https://github.com/sovintz",
+      "label": "GitHub"
+    }
+  ]
+}

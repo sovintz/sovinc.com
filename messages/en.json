@@ -1,0 +1,193 @@
+{
+  "navbar": {
+    "navMenu": [
+      {
+        "title": "About",
+        "to": "#about"
+      },
+      {
+        "title": "Competences",
+        "to": "#competences"
+      },
+      {
+        "title": "Experience",
+        "to": "#projects"
+      },
+      {
+        "title": "Contact",
+        "to": "#contact"
+      }
+    ],
+    "localeSwitcher": {
+      "en": "English",
+      "sl": "slovenščina"
+    }
+  },
+  "homePage": {
+    "pageTitle": "Lan Sovinc",
+    "tabTitle": "Lan Sovinc",
+    "metaData": "My name is Lan and I am a software engineer. I have completed my master's studies at the Faculty of Computer and Information Science, University of Ljubljana.",
+    "hero": {
+      "buttonContact": "Contact",
+      "typewriter": {
+        "base": "I am a ",
+        "nouns": [
+          "problem solver",
+          "developer",
+          "entrepreneur",
+          "IoT enthusiast",
+          "friend",
+          "DIY tinkerer",
+          "learner"
+        ]
+      }
+    },
+    "aboutSection": {
+      "title": "About",
+      "myName": "Lan Sovinc",
+      "altText": "Lan Sovinc profile picture",
+      "obtainedTitle": "Full Stack Engineer",
+      "description": "My name is Lan and I am a software engineer. I have completed my master's studies at the Faculty of Computer and Information Science, University of Ljubljana. I am hardworking and precise, but also articulate and outgoing. I look forward to challenges where I can use my skills to help solve problems while gaining new knowledge and experience. In my free time, I enjoy working on various personal projects in the areas of computer science and programming, electronics, and photography, but I also always find time for family, friends, and sports activities. I am motivated by a desire to progress and help others."
+    },
+    "competencesSection": {
+      "title": "What I do?",
+      "competences": [
+        {
+          "title": "Web Development",
+          "description": "Development of Full Stack web applications with modern tools and methods (Node.js, Express.js, MongoDB, React, Next.js, Vue.js, Nginx, Docker, ...).",
+          "icon": "code"
+        },
+        {
+          "title": "IoT Development",
+          "description": "Development of IoT (Internet of Things) systems and programming of IoT devices in programming languages C/C++.",
+          "icon": "monitorSmartphone"
+        },
+        {
+          "title": "Design and content management",
+          "description": "Designing company web presence, editing WordPress websites and product photography for social networks.",
+          "icon": "pencilRuler"
+        }
+      ]
+    },
+    "projectsSection": {
+      "title": "Work and Projects",
+      "button": "Link",
+      "projects": [
+        {
+          "title": "Lama Bot",
+          "description": "Development of an AI chatbot platform that helps businesses engage website visitors and automate customer interactions.",
+          "image": "/images/lamabot.png",
+          "altText": "Lamabot project image",
+          "link": "https://bot.lama-labs.com/en"
+        },
+        {
+          "title": "Bonfires.ai",
+          "description": "Co‑developed a community-driven AI platform to collaboratively train multi-agent systems for collective sensemaking and on-chain governance.",
+          "image": "/images/bonfires.png",
+          "altText": "Bonfires.ai project image",
+          "link": "https://bonfires.ai"
+        },
+        {
+          "title": "Yelay",
+          "description": "Collaborated on the development of a platform that allows institutions to easily access DeFi yield strategies and to manage risk-adjusted portfolios.",
+          "image": "/images/yelay.png",
+          "altText": "Yelay project image",
+          "link": "https://app.yelay.io"
+        },
+        {
+          "title": "Pikado Real Estate",
+          "description": "Development of a web application for a real estate agency.",
+          "image": "/images/pikado_real_estate.png",
+          "altText": "Pikado Real Estate project image",
+          "link": "https://realestate.pikado.si/en"
+        },
+        {
+          "title": "LetterBot",
+          "description": "Development of an AI-power web motivation letter generator.",
+          "image": "/images/letterbot.png",
+          "altText": "LetterBot project image"
+        },
+        {
+          "title": "IJS - Department of Intelligent Systems",
+          "description": "Collaborated on the development of the backend for electronic and mobile health platform Insieme.",
+          "image": "/images/insieme.png",
+          "altText": "Insieme project image",
+          "link": "http://91.216.54.27:8080/"
+        },
+        {
+          "title": "Personal IoT Project",
+          "description": "Development of an IoT Building Heating Control and Management System",
+          "image": "/images/vticnica.jpg",
+          "altText": "IoT plug image"
+        },
+        {
+          "title": "Bang & Olufsen Slovenia",
+          "description": "Website editor, product photographer and social media manager.",
+          "image": "/images/bang_olufsen.jpg",
+          "altText": "Bang & Olufsen project image",
+          "link": "https://www.instagram.com/bangolufsen_slovenija/"
+        }
+      ]
+    }
+  },
+  "contactComponent": {
+    "formTitle": "Send me a message",
+    "formDescription": "Ask me anything, or just say hi!",
+    "form": {
+      "name": {
+        "label": "Name*",
+        "placeholder": "Your name",
+        "required": "Name is required",
+        "maxLength": "Name must be less than 32 characters"
+      },
+      "email": {
+        "label": "E-mail*",
+        "placeholder": "Your e-mail",
+        "required": "E-mail is required",
+        "invalid": "E-mail address must be valid",
+        "maxLength": "E-mail must be less than 128 characters"
+      },
+      "message": {
+        "label": "Message*",
+        "placeholder": "Your message",
+        "required": "Message is required",
+        "maxLength": "Message must be less than 2048 characters"
+      },
+      "buttonLabel": "Submit",
+      "submitting": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "Failed to send message. Please try again."
+    },
+    "snackbar": {
+      "text": "Message sent",
+      "textErr": "Error while sending message",
+      "close": "Close"
+    }
+  },
+  "footer": {
+    "copyright": "Lan Sovinc | All Rights Reserved"
+  },
+  "cookies": {
+    "title": "Cookie Consent",
+    "message": "This site uses cookies for operation and analytics. We use cookies to enhance your browsing experience and analyze our traffic.",
+    "accept": "Accept",
+    "reject": "Reject"
+  },
+  "socialIcons": [
+    {
+      "icon": "mail",
+      "href": "mailto:lan@sovinc.com",
+      "label": "Email"
+    },
+    {
+      "icon": "linkedin",
+      "href": "https://linkedin.com/in/lan-sovinc",
+      "label": "LinkedIn"
+    },
+    {
+      "icon": "github",
+      "href": "https://github.com/sovintz",
+      "label": "GitHub"
+    }
+  ]
+}
