@@ -1,0 +1,9 @@
+.heroClipPath {
+  clip-path: none;
+}
+
+@media (min-width: 1280px) {
+  .heroClipPath {
+    clip-path: polygon(0 0, 65% 0, 55% 100%, 0% 100%);
+  }
+}
