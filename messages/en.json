@@ -30,15 +30,15 @@
     "hero": {
       "buttonContact": "Contact",
       "typewriter": {
-        "base": "I am a ",
+        "base": "I am ",
         "nouns": [
-          "problem solver",
-          "developer",
-          "entrepreneur",
-          "IoT enthusiast",
-          "friend",
-          "DIY tinkerer",
-          "learner"
+          "a problem solver",
+          "a developer",
+          "an entrepreneur",
+          "an IoT enthusiast",
+          "a friend",
+          "a DIY tinkerer",
+          "a learner"
         ]
       }
     },
